@@ -11,14 +11,12 @@ app.use(express.json());
 
 //routes
 const userRouter = require("./Routers/user.route")
+const consultantRouter = require("./Routers/consultant.route")
 
 
-
-
-
+//APi path 
 app.use('/api/users', userRouter)
-
-
+app.use('/api/consultantInfo',consultantRouter)
 
 // run().catch(console.dir);
 app.get("/", (req, res) => {

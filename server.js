@@ -4,8 +4,10 @@ const colors = require("colors");
 
 const app = require("./app");
 
+// const url=
+
 //database connection
-mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yofznvf.mongodb.net/?retryWrites=true&w=majority`).then(() => {
   console.log(`Succeeded to connect the database`.red.bold);
 });
 
