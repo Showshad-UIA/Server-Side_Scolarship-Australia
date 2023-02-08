@@ -1,4 +1,3 @@
-const { getDb } = require("../Utils/dbConnect");
 const Users = require("../modules/users");
 
 module.exports.getUsers =async(req, res, next) => {
